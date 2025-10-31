@@ -64,6 +64,7 @@ temp/
 .idea/
 *.suo
 .ntvs
+*.ntvs*
 *.njsproj
 *.sln
 *.sw?
@@ -72,4 +73,5 @@ temp/
 # OS Generated Files
 # =========================
 .DS_Store
+Thumbs.db
 Thumbs.db

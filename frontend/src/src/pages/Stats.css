@@ -1,0 +1,158 @@
+.stats-container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: 40px 20px;
+}
+
+.stats-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.stats-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0 0 12px 0;
+}
+
+.stats-subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0;
+  font-weight: 400;
+}
+
+.loading,
+.error-message,
+.no-data {
+  text-align: center;
+  padding: 40px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.08);
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.loading {
+  color: #1e3a8a;
+}
+
+.error-message {
+  background: #fee2e2;
+  border: 2px solid #fca5a5;
+  color: #7f1d1d;
+}
+
+.no-data {
+  color: #6b7280;
+}
+
+.stats-table-wrapper {
+  max-width: 800px;
+  margin: 0 auto 32px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(30, 58, 138, 0.08);
+  overflow: hidden;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stats-table thead {
+  background: #1e3a8a;
+  color: white;
+}
+
+.stats-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stats-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.stats-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.stats-table tbody tr.even {
+  background: #f3f4f6;
+}
+
+.stats-table td {
+  padding: 16px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.prof-name {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.visit-count {
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background: #0ea5e9;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.refresh-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 32px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.refresh-btn:hover {
+  background: #1e40af;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    padding: 24px 16px;
+  }
+
+  .stats-title {
+    font-size: 32px;
+  }
+
+  .stats-table th,
+  .stats-table td {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+
+  .badge {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}

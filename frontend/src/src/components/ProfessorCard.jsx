@@ -9,12 +9,6 @@ export default function ProfessorCard({ professor }) {
   const [loading, setLoading] = useState(false)
 
   const loadAvailability = async () => {
-    // <CHANGE> Toggle logic - if already showing, hide it. Otherwise load and show.
-    if (showAvailability) {
-      setShowAvailability(false)
-      return
-    }
-
     setLoading(true)
     try {
       const res = await api.get("/availability", {
