@@ -6,8 +6,6 @@ import professorRoutes from "./routes/professorRoutes.js";
 import availabilityRoutes from "./routes/availabilityRoutes.js";
 import visitRoutes from "./routes/visitRoutes.js";
 
-
-
 dotenv.config();
 connectDB();
 
@@ -26,3 +24,4 @@ app.use("/api/visits", visitRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`✅ Server running on port ${PORT}`));
+
