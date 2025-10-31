@@ -3,14 +3,16 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import LandPage from "./pages/LandPage";
 import BookVisit from "./pages/BookVisit";
 import Stats from "./pages/Stats";
+import Navbar from "./components/Navbar"
 
 export default function App() {
   return (
     <BrowserRouter>
-      <nav style={{ padding: "10px", background: "#eee" }}>
+      <Navbar />
+      {/* <nav style={{ padding: "10px", background: "#eee" }}>
         <Link to="/" style={{ marginRight: "10px" }}>Home</Link>
         <Link to="/stats">Stats</Link>
-      </nav>
+      </nav> */}
 
       <Routes>
         <Route path="/" element={<LandPage />} />

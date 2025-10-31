@@ -63,6 +63,7 @@ temp/
 .vscode/
 .idea/
 *.suo
+.ntvs
 *.ntvs*
 *.njsproj
 *.sln
@@ -72,4 +73,5 @@ temp/
 # OS Generated Files
 # =========================
 .DS_Store
+Thumbs.db
 Thumbs.db
